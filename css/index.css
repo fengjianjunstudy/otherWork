@@ -1,8 +1,11 @@
 .w1180{ width: 1180px; margin:0 auto;}
 /**header begin***/
-.header{}
+.header{ height: 36px; line-height: 36px; text-align: right; color: #999;}
+.marL40{ margin-left:40px; }
 /**header end***/
 /**index begin***/
 /**index end***/
 /**footer begin***/
+.footer{height: 77px; line-height: 77px; text-align: center; color: #808080;}
+.footer i{ margin:0  6px 0 15px;}
 /**footer end***/

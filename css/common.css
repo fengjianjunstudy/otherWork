@@ -8,12 +8,12 @@ ol,ul{list-style:none}img{border:0}em{font-style:normal}
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
 table{border-collapse:collapse;border-spacing:0}
 textarea{resize:none}
-a{outline:none;text-decoration:none;color:#000}
-a:hover{text-decoration:underline;color:#901d22}
+a{outline:none;text-decoration:none;color:#999999}
+a:hover{text-decoration:none;color:#608099}
 .minibox{min-width:1000px;overflow:hidden}
 .videocomment{overflow:hidden}
 .none{display:none}
 .clearfix{*zoom:1}
 .clearfix:after{content:" ";overflow:hidden;clear:both;display:block;height:0}
 
-body{min-width:1000px;width:100%;background:url(http://y1.ifengimg.com/084f0f3021c4226b/2014/0905/china2014bg07.jpg) no-repeat center top;font-family:"Microsoft YaHei","SimSun",Arial,Helvetica,sans-serif}
+body{min-width:1000px;width:100%;font-family:"Microsoft YaHei","SimSun",Arial,Helvetica,sans-serif; font-size: 13px;}
