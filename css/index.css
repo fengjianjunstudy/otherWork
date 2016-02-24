@@ -28,7 +28,35 @@
 .search_left button{margin-top: 12px; border-radius: 2px; cursor: pointer; margin-left: 8px; display:inline-block;width:62px; border: none; height: 30px; background-color: #247ADD; text-align: center; line-height: 30px;padding: 0; color: #fff;}
 .search-right{padding-left: 20px; width: 760px; line-height: 54px; font-size: 13px; color: #D6915F;}
 .search-right a{ color:#4A90E2; text-decoration: underline}
-/**footer begin***/
+/****comment**/
+.comment_list{ margin-bottom: 50px;}
+.comment_list li{ padding:30px 0 20px; border-top: 1px solid #DEE4EC;}
+.comment_list li.last_child{border-bottom: 1px solid #dee4ec;}
+.comment_list li:last-child{border-bottom: 1px solid #dee4ec;}
+.comment_left{ float: left; width: 100px; color: #608099; line-height: 24px; font-size: 12px;}
+.comment_left img,.message_left img{ display: block; width: 48px; height: 48px;}
+.comment_right,.message_right{ float: right; width: 1040px; padding: 0 20px; line-height: 20px; font-size:14px; color: #71777A; }
+.product_href{display: inline-block; margin-right: 10px; border:1px solid #DEE4EC;height: 148px; width: 148px; margin-top: 13px;}
+.product_href img{ display: block; border:none; height: 148px; width: 148px;}
+.comment_time{ margin-top: 10px; line-height: 20px; font-size: 12px; color: #999;}
+/***message_detail****/
+.message_t{ height: 30px; line-height: 30px; color: #71777A; font-size:14px; border-bottom: 2px solid #DEE4EC; }
+.message_t span{ display:inline-block; border-bottom: 2px solid #6098D8; margin-bottom: -2px; color: #608099; font-size: 16px; margin-right: 10px;}
+.message_list{ margin: 20px 0 50px;}
+.message_list li{ border-radius: 5px; padding: 20px; border: 1px solid #C5D7E0; position: relative; background-color: #F7F8FA; margin-bottom: 20px;}
+.message_list li:hover{ background-color: #EDF7F5; border-color: #C5D7E0;}
+.message_left{ float: left; width: 100px;}
+.message_left a{ display: block;}
+.message_right{width:778px; padding: 0;}
+.message_time{ position: absolute; bottom: 20px; left: 20px; line-height: 20px; font-size: 12px; color: #999;}
+.add_mess{ margin-top: -20px;}
+.mess_discr{ color: #608099; line-height:20px;font-size: 14px; font-family: "Microsoft YaHei", "SimSun", Arial, Helvetica, sans-serif;}
+.mess_textarea{ display: block; resize: none; margin-bottom: 20px; padding:12px 14px; width:910px; border:1px solid #C5D7E0; height: 82px; line-height: 20px;border-radius: 2px; margin-top: 14px; color: #BFBFBF; font-size: 14px; }
+.mess_textarea:focus{ color: #333;}
+.mess_operate{ margin-bottom: 20px; text-align: right;}
+.mess_operate button{border: 1px solid #C5D7E0; padding: 0; margin-left: 10px; height: 30px; line-height: 30px; text-align: center; background-color: #F7F8FA; color: #608099; font-size: 14px;width: 76px;border-radius: 2px;}
+.mess_operate .liuy{ background-color: #247ADD; border-color: #247ADD; color: #fff; margin-left: 80px;}
+    /**footer begin***/
 .footer{height: 77px; line-height: 77px; text-align: center; color: #808080;}
 .footer i{ margin:0  6px 0 15px;}
 /**footer end***/
@@ -77,4 +105,16 @@
 .center_form input:focus{ border-color: #6098D8}
 .edit_save{ padding-left: 484px; margin-top: 60px;}
 .myself_btn{ width: 76px;padding: 0; color: #fff; border-radius:2px;font-size: 14px; height: 32px; border:none; background-color: #247ADD; line-height: 32px; text-align: center; display: block;}
+/**message-list**/
+.mes_table tr{ text-align: center; font-size: 14px; color:#a7abad;  }
+.mes_table td,.mes_table th{ border-bottom: 1px solid #dee4ec; text-align: center; height: 38px; line-height: 38px;}
+.mes_table th{ border-top: 1px solid #dee4ec; height: 44px; line-height: 44px;}
+.mes_table .odd{background-color: #f7f8fa;}
+.mes_table tr:nth-of-type(odd){ background-color: #f7f8fa;}
+.mes_table .even{ background-color: #fff;}
+.mes_table tr:nth-of-type(even){ background-color: #fff;}
+.mes_table .have{ color:#f0be6c;}
+.mes_table a{ color: #5196e4;}
+.mes_table a:hover{ text-decoration: underline}
+.record{ line-height: 20px; color:#71777A; font-size: 14px; margin-top: 15px;}
 /***center end***/
