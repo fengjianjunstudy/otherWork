@@ -117,4 +117,23 @@
 .mes_table a{ color: #5196e4;}
 .mes_table a:hover{ text-decoration: underline}
 .record{ line-height: 20px; color:#71777A; font-size: 14px; margin-top: 15px;}
+/****recommend****/
+.sort_list{ padding-left:10px; top:-20px;position: relative; z-index: 100; border-bottom:1px solid #DEE4EC; height: 40px;  line-height: 40px; font-size: 14px; color: #608099; }
+.time_sort{ position: absolute;left: 68px; top: 0; color: #71777A; padding: 0 20px 10px; }
+.time_result{ line-height: 40px;}
+.time_result i{ margin-left:7px; }
+.time_sort ul{ display: none}
+.time_sort:hover{ border:1px solid #C5D7E0; background-color: #fff; left: 67px; top: -1px;}
+.time_sort:hover ul{ display: block;}
+.time_sort ul li:hover{ color: #002a80; cursor: pointer; font-weight: bold;}
+.showStyle{position: absolute; left: 230px; line-height: 40px; top: 0; width: 260px;}
+.showStyle input,.showStyle label{ vertical-align:middle; margin: 0;}
+.showStyle span{margin-right: 16px;}
+.showStyle input{ margin-left: 8px;}
+.showStyle .marR20{margin-right: 20px;}
+.sort_list .sort_search{ line-height: 24px; background-color: #F7F8FA; text-align: center; padding: 0; color: #608099; font-size: 14px; display: block; top: 6px; width: 48px; position: absolute; right: 300px;border:1px solid #C5D7E0;}
+.recommend_list{ width: 960px; margin-top: 0;}
+/***recommend copy****/
+.recommend_mes{ margin-top: 0;}
+.recommend_mes li,.recommend_mes li:hover{ border-left: none; border-right: none; border-top: none; background-color: #fff; border-radius: 0;}
 /***center end***/
