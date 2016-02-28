@@ -26,6 +26,91 @@
             <a href="#" class="fl logo"><img src="img/Group.png" width="192"> </a>
             <a href="" class="fr"><img src="img/banner.png"> </a>
         </div>
+        <div class="pro_class clearfix">
+            <ul class="class_left J_tab">
+                <li class="cur" data-show="true">外套</li>
+                <li data-show="true">上衣</li>
+                <li data-show="false">裤子</li>
+                <li class="last-child" data-show="false">鞋、包、饰品</li>
+            </ul>
+            <ul class="class_right J_tab_con J_coat">
+                <li class="cur">
+                    <span class="class_cur">所有外套</span>
+                    <span>休闲西装</span>
+                    <span>羽绒服</span>
+                </li>
+                <li>
+                    <span>所有上衣</span>
+                    <span>休闲西装</span>
+                    <span>羽绒服</span>
+                </li>
+                <li>
+                    <span>所有裤子</span>
+                    <span>休闲西装</span>
+                    <span>羽绒服</span>
+                </li>
+                <li>
+                    <span>所有鞋包饰品</span>
+                    <span>休闲西装</span>
+                    <span>羽绒服</span>
+                </li>
+            </ul>
+        </div>
+        <div class="pro_class clearfix">
+            <ul class="class_left">
+                <li>场合</li>
+            </ul>
+            <ul class="ch_right J_occasion">
+                <li class="cur">
+                    <span class="class_cur">所有外套</span>
+                    <span>休闲西装</span>
+                    <span>羽绒服</span>
+                </li>
+            </ul>
+        </div>
+        <div class="face_style clearfix J_face_style">
+            <div class="style_left">脸型</div>
+            <div class="style_right">
+                <ul class="face_class J_face_class">
+                    <li class="cur">
+                        <img src="img/head1.png">
+                        <p>长方型脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head2.png">
+                        <p>方形脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head3.png">
+                        <p>椭圆形脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head4.png">
+                        <p>圆形脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head5.png">
+                        <p>菱形脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head6.png">
+                        <p>心形脸</p>
+                    </li>
+                    <li>
+                        <img src="img/head7.png">
+                        <p>梨形脸</p>
+                    </li>
+                </ul>
+                <button class="J_face_ts">小贴士</button>
+                <button class="J_test_myself">测试自己</button>
+            </div>
+        </div>
+        <div class="class_con">
+            <span id="coat">所有上衣</span>
+            <span id="occasion">所有场合</span>
+            <span id="faceStyle">所有场合</span>
+            <button>刷新</button>
+        </div>
         <!----search---->
         <div class="search clearfix">
             <div class="search_left fl">
@@ -131,8 +216,126 @@
     <div class="footer w1180">
         <i class="fa fa-qq"></i><a href="#">网站客服</a><i class="fa fa-weibo"></i><a href="#"> 微博客服</a> <i class="fa fa-envelope" ></i>zhourx@sohu.com | 北京创新乐知信息技术有限公司 版权所有 | 京ICP备15050191号 | CopyRight © nanpinyx.com All Right Reserved.
     </div>
+    <div class="zhezhao" id="zhezhao"></div>
+    <div class="upload_face ">
+        <div class="mess_operate">
+            <input type="file" class="fl">
+            <button>上传</button>
+        </div>
+        <div class="clearfix mess_operate marT130">
+            <button class="add_img fr">取消</button>
+            <button class="add_img fr">确认</button>
+        </div>
+    </div>
+    <!--小贴士 begin-->
+    <div class="face_ts" id="face_ts">
+        <div class="layout_close J_close"><i class="fa fa-close"></i></div>
+        <div class="face_detail">
+            <p class="face_dg">中国男人的脸形，从外轮廓上分，大致可以分为七种：<strong>长方形脸，方形脸，椭圆形脸，圆形脸，菱形脸，心形脸，梨形脸</strong>。脸型决定了穿衣风格，下面我们分别对这七种脸做详细阐述，也请您照着镜子辨别一下您是什么样的脸形。</p>
+            <div class="face_container">
+                <ul class="clearfix face_list" style="width: 2450px;">
+                    <li>
+                        <img src="img/head1.png">
+                        <p class="face_title">长方形脸</p>
+                        <p>这种脸型外部轮廓类似于长方形，有方形的腮骨，脸部线条清晰。通常中庭较长、五官大气，脖子细长。</p>
+                        <p>宜选择温莎领或高领型的衬衫。避免深V领和太过细长的领尖。</p>
+                    </li>
+                    <li>
+                        <img src="img/head2.png">
+                        <p class="face_title">方形脸</p>
+                        <p>脸型宽且短，有方形的腮骨，脸部线条清晰。给人稳重、诚恳的印象。</p>
+                        <p>宜选择增加面部线条柔和度的领型，如：标准领，圆角领等。避免棱角感很强，线条分明的领型。</p>
+                    </li>
+                    <li>
+                        <img src="img/head3.png">
+                        <p class="face_title">椭圆形脸</p>
+                        <p>这是中国人的标准脸型，脸部轮廓类似于椭圆形，整体线条柔和，没有明显的棱角感。</p>
+                        <p>适合所有领型。只需注意颈部的长短、粗细和领围的关系，相对合适的领围会让你看起来更舒适。</p>
+                    </li>
+                    <li>
+                        <img src="img/head4.png">
+                        <p class="face_title">圆形脸</p>
+                        <p>圆脸型较宽且短、脸部线条柔和圆润没有明显的棱角感，显得年轻有活力、有亲切感。</p>
+                        <p>宜选择可以拉长脸形的领型，如：U领、V领。避免有横向拉伸效果或过于尖锐的领型，如：方领。</p>
+                    </li>
+                    <li>
+                        <img src="img/head5.png">
+                        <p class="face_title">菱形脸</p>
+                        <p>脸部线条清晰、棱角分明、颧骨突出、前额较窄、下颌较窄。</p>
+                        <p>宜选择立体感强、具有线条感的领型，如：标准领，长尖领。不宜选择线条圆滑的领型，如：圆领。</p>
+                    </li>
+                    <li>
+                        <img src="img/head6.png">
+                        <p class="face_title">心形脸</p>
+                        <p>整体线条柔和圆润，没有明显的棱角感。额头较宽、下颌较窄，显得年轻有活力，属于理想的脸型。</p>
+                        <p>适合所有领型。只需注意颈部的长短、粗细和领围的关系，相对合适的领围会让你看起来更舒适。</p>
+                    </li>
+                    <li>
+                        <img src="img/head7.png">
+                        <p class="face_title">梨形脸</p>
+                        <p>整体线条柔和圆润，头顶及额部较窄，下颌较宽，给人稳重、诚恳的印象。</p>
+                        <p>宜选择有延展脸部线条的领型，如：U领和V领。尽量避免有横向拉伸效果或过于尖锐的领型，如：方领。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn_left beable"><i class="fa fa-angle-left"></i></div>
+        <div class="btn_right"><i class="fa fa-angle-right"></i></div>
+    </div>
+    <!--小贴士 end-->
+    <!--test_myself begin-->
+    <div class="test_myself" id="test_myself">
+        <div class="layout_close J_close"><i class="fa fa-close"></i></div>
+        <div class="which_face">
+            <p class="which_title">你的脸是什么样</p>
+            <p class="which_ms">左图：骨感 | 右图：圆润</p>
+            <!---两列 begin-->
+            <ul class="clearfix select_face w164" style="display: none">
+                <li class="cur"><img src="img/head1.png"></li>
+                <li><img src="img/head2.png"></li>
+            </ul>
+            <!---两列 end-->
+            <!---三列 begin-->
+            <ul class="clearfix select_face w154">
+                <li class="cur"><img src="img/head1.png"></li>
+                <li><img src="img/head2.png"></li>
+                <li><img src="img/head3.png"></li>
+            </ul>
+            <!---三列 end-->
+        </div>
+        <button class="reset_test">重新测试</button>
+    </div>
+    <!--test_myself end-->
+    <!--留言 begin-->
+    <div class="leave_message" id="leave_message">
+        <div class="layout_close J_close"><i class="fa fa-close"></i></div>
+        <div class="mes_con">
+            <a href="" class="mes_img"><img src="img/face.png"> </a>
+            <div class="mes_text">
+                <p>Hi，我是男士选品的客服。</p>
+                <p>有任何购买服装方面的需求，请留言：）例如，我想要一件黑色皮夹克，我会在隔日推荐给您！</p>
+                <p  class="text_red">若能上传您的半身像照片，我推荐给您的将更加合适。</p>
+            </div>
+        </div>
+        <div class="upload_mes">
+            <div class="mes_image">
+                <a href="#" class="">
+                    <img src="img/face.png">
+                    <p>fjj_321</p>
+                </a>
+            </div>
+            <textarea class="mes_textarea"></textarea>
+            <div class="clearfix mess_operate operate_btn">
+                <button class="add_img fl">增加图片</button>
+                <button class="add_img fl">清除图片</button>
+                <button class="liuy fr">提交</button>
+            </div>
+        </div>
+    </div>
+    <!--test_myself end-->
     <!-- footer end -->
-    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
