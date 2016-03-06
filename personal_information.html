@@ -72,7 +72,7 @@
                 <div class="center_form test_face">
                     <label>我的脸型</label>
                     <img src="img/head1.png">
-                    <button>测测自己</button>
+                    <button class="J_test_myself">测测自己</button>
                 </div>
                 <div class="edit_save">
                     <button class="myself_btn">保存</button>
@@ -80,7 +80,7 @@
             </form>
             <div class="change_head">
                 <img src="img/face.png">
-                <button>更换头像</button>
+                <button class="J_change_head">更换头像</button>
             </div>
         </div>
     </div>
@@ -91,7 +91,48 @@
     <i class="fa fa-qq"></i><a href="#">网站客服</a><i class="fa fa-weibo"></i><a href="#"> 微博客服</a> <i class="fa fa-envelope" ></i>zhourx@sohu.com | 北京创新乐知信息技术有限公司 版权所有 | 京ICP备15050191号 | CopyRight © nanpinyx.com All Right Reserved.
 </div>
 <!-- footer end -->
-<script src="js/jquery-1.12.0.min.js"></script>
+<div class="zhezhao" id="zhezhao"></div>
+<!--test_myself begin-->
+<div class="test_myself" id="test_myself">
+    <div class="layout_close J_close"><i class="fa fa-close"></i></div>
+    <div class="which_face J_which_face" id="face_style1">
+        <p class="which_title">你的脸是什么样</p>
+        <p class="which_ms">左图：骨感 | 右图：圆润</p>
+        <!---两列 begin-->
+        <ul class="clearfix select_face w164">
+            <li class="cur J_face_style" data-id="face_style2"><img src="img/head1.png"></li>
+            <li class="J_face_style" data-id="face_style3"><img src="img/head2.png"></li>
+        </ul>
+        <!---两列 end-->
+    </div>
+    <div class="which_face J_which_face" style="display: none;"  id="face_style2">
+        <p class="which_title">你的脸是什么样</p>
+        <p class="which_ms">左图：骨感 | 右图：圆润</p>
+        <!---三列 begin-->
+        <ul class="clearfix select_face w154">
+            <li class="cur J_face_style"><img src="img/head1.png"></li>
+            <li class="J_face_style"><img src="img/head2.png"></li>
+            <li class="J_face_style"><img src="img/head3.png"></li>
+        </ul>
+        <!---三列 end-->
+    </div>
+    <button class="reset_test J_reset_test">重新测试</button>
+</div>
+<!--test_myself end-->
+<!---change head begin--->
+<div class="upload_face J_upload_face">
+    <div class="mess_operate">
+        <input type="file" class="fl">
+        <button>上传</button>
+    </div>
+    <div class="clearfix mess_operate marT130">
+        <button class="add_img fr J_cancel">取消</button>
+        <button class="add_img fr">确认</button>
+    </div>
+</div>
+<!---change head end--->
+<script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

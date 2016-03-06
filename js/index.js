@@ -44,5 +44,66 @@ $(function(){
     $(".J_test_myself").on("click",function(){
         $("#zhezhao").show();
         $("#test_myself").show();
+        return false;
+    })
+    $(".J_change_head").on("click",function(){
+        $("#zhezhao").show();
+        $(".J_upload_face").show();
+    })
+    $(".J_cancel").on("click",function(){
+        $("#zhezhao").hide();
+        $(".J_upload_face").hide();
+    })
+    function checkFace(){
+        var index=0;
+        var oFaceList=$(".J_face_list li");
+        var listLi=oFaceList.length;
+        var width=oFaceList.outerWidth();
+        checkFace=function(flag){
+            if(flag){
+                console.log(index);
+                if(index <= 0){
+                    return false;
+                }else{
+                    var left=--index*width;
+                    $(".J_btn_right").addClass("beable");
+                    $(".J_face_list").animate({'left':-left},500,function(){
+                        if(index <= 0){
+                            $(".J_btn_left").removeClass("beable");
+                        }
+                    })
+                }
+            }else{
+                console.log(index,listLi);
+                if(index >= (listLi-1)){
+                    return false;
+                }else{
+                    var left=++index*width;
+                    $(".J_btn_left").addClass("beable");
+                    $(".J_face_list").animate({'left':-left},500,function(){
+                        if(index >= (listLi-1)){
+                            $(".J_btn_right").removeClass("beable");
+                        }
+                    })
+                }
+            }
+        }
+        return checkFace;
+
+    }
+    checkFace();
+    $(".J_btn_left").on("click",function(){
+        checkFace(true);
+    })
+    $(".J_btn_right").on("click",function(){
+        checkFace(false);
+    })
+    $(".J_face_style").on("click",function(){
+        $(this).parents(".J_which_face").hide();
+        var id=$(this).data("id");
+        $("#"+id).show();
+    })
+    $(".J_reset_test").on("click",function(){
+        $(".J_which_face").hide().filter("#face_style1").show();
     })
 })

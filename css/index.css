@@ -208,11 +208,11 @@
 .beable{ color: #247ADD; background-color: #F7F8FA;}
 .face_detail{ padding: 45px 0;}
 .face_dg{font-size: 13px; line-height: 16px; color: #71777A; padding-bottom: 30px;border-bottom: 2px solid #eff2f6;}
-.face_list{ margin-top: 40px;}
+.face_list{position: absolute; left: 0; top: 40px;}
 .face_list img{ display: block; width: 200px; height: 200px; border:none; margin: 0 auto;}
 .face_list li{ float: left;width: 350px; line-height: 20px; color: #71777A;}
 .face_title{ text-align: center; line-height: 30px; font-size: 20px; color: #608099;}
-.face_container{ overflow: hidden;}
+.face_container{ overflow: hidden; position: relative; width: 350px; height: 350px;}
 /***测试自己****/
 .test_myself{ height: 460px; padding: 0 10px; width: 540px; display: none;}
 .reset_test{ width: 102px; height: 32px; background-color: #247ADD; border:none; display: block; margin: 30px auto 0; font-size: 14px; color: #fff; border-radius: 2px;}
@@ -221,7 +221,7 @@
 .which_ms{font-size:13px; color: #71777A; line-height: 20px; margin-top: 10px; text-align: center; }
 .select_face{ text-align: center; margin-top: 50px;}
 .select_face li{ display: inline-block; border-radius: 5px; margin: 0 8px;padding: 12px;border:1px solid #fff; cursor: pointer;}
-.select_face li.cur{ border:1px solid #247ADD; box-shadow: 0 0 10px rgba(36,122,221,0.5)}
+.select_face li.cur,.select_face li:hover{ border:1px solid #247ADD; box-shadow: 0 0 10px rgba(36,122,221,0.5)}
 .w164 li img{ display: block; width: 140px; height: 140px;}
 .w154 li img{ display: block; height: 130px; width: 130px;}
 /*****留言****/

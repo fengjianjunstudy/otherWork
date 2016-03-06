@@ -233,7 +233,7 @@
         <div class="face_detail">
             <p class="face_dg">中国男人的脸形，从外轮廓上分，大致可以分为七种：<strong>长方形脸，方形脸，椭圆形脸，圆形脸，菱形脸，心形脸，梨形脸</strong>。脸型决定了穿衣风格，下面我们分别对这七种脸做详细阐述，也请您照着镜子辨别一下您是什么样的脸形。</p>
             <div class="face_container">
-                <ul class="clearfix face_list" style="width: 2450px;">
+                <ul class="clearfix face_list J_face_list" style="width: 2450px;">
                     <li>
                         <img src="img/head1.png">
                         <p class="face_title">长方形脸</p>
@@ -279,31 +279,35 @@
                 </ul>
             </div>
         </div>
-        <div class="btn_left beable"><i class="fa fa-angle-left"></i></div>
-        <div class="btn_right"><i class="fa fa-angle-right"></i></div>
+        <div class="btn_left J_btn_left"><i class="fa fa-angle-left"></i></div>
+        <div class="btn_right J_btn_right beable"><i class="fa fa-angle-right"></i></div>
     </div>
     <!--小贴士 end-->
     <!--test_myself begin-->
     <div class="test_myself" id="test_myself">
         <div class="layout_close J_close"><i class="fa fa-close"></i></div>
-        <div class="which_face">
+        <div class="which_face J_which_face" id="face_style1">
             <p class="which_title">你的脸是什么样</p>
             <p class="which_ms">左图：骨感 | 右图：圆润</p>
             <!---两列 begin-->
-            <ul class="clearfix select_face w164" style="display: none">
-                <li class="cur"><img src="img/head1.png"></li>
-                <li><img src="img/head2.png"></li>
+            <ul class="clearfix select_face w164">
+                <li class="cur J_face_style" data-id="face_style2"><img src="img/head1.png"></li>
+                <li class="J_face_style" data-id="face_style3"><img src="img/head2.png"></li>
             </ul>
             <!---两列 end-->
+        </div>
+        <div class="which_face J_which_face" style="display: none;"  id="face_style2">
+            <p class="which_title">你的脸是什么样</p>
+            <p class="which_ms">左图：骨感 | 右图：圆润</p>
             <!---三列 begin-->
             <ul class="clearfix select_face w154">
-                <li class="cur"><img src="img/head1.png"></li>
-                <li><img src="img/head2.png"></li>
-                <li><img src="img/head3.png"></li>
+                <li class="cur J_face_style"><img src="img/head1.png"></li>
+                <li class="J_face_style"><img src="img/head2.png"></li>
+                <li class="J_face_style"><img src="img/head3.png"></li>
             </ul>
             <!---三列 end-->
         </div>
-        <button class="reset_test">重新测试</button>
+        <button class="reset_test J_reset_test">重新测试</button>
     </div>
     <!--test_myself end-->
     <!--留言 begin-->
@@ -332,7 +336,7 @@
             </div>
         </div>
     </div>
-    <!--test_myself end-->
+    <!--留言 end-->
     <!-- footer end -->
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
