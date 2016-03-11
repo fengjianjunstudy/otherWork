@@ -106,4 +106,9 @@ $(function(){
     $(".J_reset_test").on("click",function(){
         $(".J_which_face").hide().filter("#face_style1").show();
     })
+    $(".J_leave_message").on("click",function(){
+        $("#zhezhao").show();
+        $("#leave_message").show();
+        return false;
+    })
 })
